@@ -1,0 +1,16 @@
+{
+  "name": "matrix-markdown-editor",
+  "version": "1.0.0",
+  "description": "Markdown editor with Typescript implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TypeScript",
+    "Markdown",
+    "editor"
+  ],
+  "author": "Andy Lang",
+  "license": "ISC"
+}
