@@ -3,18 +3,22 @@
 
 <head>
     <title>Test Page</title>
+    <link rel="icon" type="image/x-icon" href="../dist/styles.css">
 </head>
 
-<body>
-    <div id="content"></div>
+<body>   
+
+    <div id="content">
+    
+
+    </div>
     <script src="../dist/editor.js"></script>
     <script>
-        // let result = sum(10, 10);
-        let calc = new Calculator();
-        let result = calc.add(10,10);
-        console.log(result);
+        let editor = new Editor();
+        editor.Initialize('content');
+        console.log(editor);
         let content = document.getElementById("content");
-        content.innerHTML = result;
+        content.innerHTML = 'Editor initialized';
     </script>
 </body>
 
