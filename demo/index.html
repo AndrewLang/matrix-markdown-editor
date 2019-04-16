@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Page</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script src="../dist/editor.js"></script>
+    <script>
+        // let result = sum(10, 10);
+        let calc = new Calculator();
+        let result = calc.add(10,10);
+        console.log(result);
+        let content = document.getElementById("content");
+        content.innerHTML = result;
+    </script>
+</body>
+
+</html>
