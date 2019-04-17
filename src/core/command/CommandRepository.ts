@@ -2,6 +2,8 @@ import { ICommand } from './ICommand';
 import { ICommandDescriptor } from './ICommandDescriptor';
 import { ICommandRepository } from './ICommandRepository';
 
+export const CommandRepositoryToken = { Token: 'CommandRepositoryToken'};
+
 export class CommandRepository implements ICommandRepository {
     Commands = new Map<string, ICommand>();
     Descriptors: ICommandDescriptor[] = [];

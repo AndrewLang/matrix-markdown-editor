@@ -3,11 +3,13 @@
 
 <head>
     <title>Test Page</title>
-    <link rel="icon" type="image/x-icon" href="../dist/styles.css">
+    <link rel="stylesheet" type="text/css" href="../dist/styles.css">
 </head>
 
 <body>   
-
+    <div>
+        <button id="insertText">Insert</button>
+    </div>
     <div id="content">
     
 
@@ -17,8 +19,13 @@
         let editor = new Editor();
         editor.Initialize('content');
         console.log(editor);
+        
         let content = document.getElementById("content");
-        content.innerHTML = 'Editor initialized';
+        content.innerHTML = '<div>Markdown Editor initialized</div>';
+
+        document.getElementById("insertText").addEventListener('click', ()=>{
+            editor.Invoke('copy', 'copy string');  
+        });
     </script>
 </body>
 
